@@ -5,10 +5,10 @@ module.exports = getDefaultConfig(__dirname);
 
 // module.exports = (async () => {
 //     let defaultConfig = await getDefaultConfig(__dirname);
-  
+
 //     return {
-//       resolver: {
-//         assetExts: [...defaultConfig.resolver.assetExts, 'css', 'js'],
-//       },
+//         resolver: {
+//             assetExts: [...defaultConfig.resolver.assetExts, 'css', '4.js'],
+//         },
 //     };
-//   })();
+// })();
