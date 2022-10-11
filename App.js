@@ -21,11 +21,7 @@ export default async function App() {
               form.on('change', (component, value) => {
                  let jsonData = JSON.stringify(form.submission.data);
                  console.log("JSON",jsonData); 
-                    setOptions(jsonData);
-                    
-                 
-                  let isValid = form.checkValidity(form.submission.data);
-                  console.log("isValid",isValid);
+                  window.ReactNativeWebView.postMessage(jsonData);
               }); })
               }`;
 
